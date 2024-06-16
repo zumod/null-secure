@@ -157,7 +157,7 @@ const App = () => {
       <>
         <Typography variant="h6" component="h2" marginTop="16px">
           Welcome <span style={{ color: '#ff3b3b' }}>{cachedName}</span>,
-          <p>Your data is shared across all the browser in your device, we still can track you</p>
+          <p>Your data is shared across all the browser in your device, we can still track you.</p>
         </Typography>
         <Button variant="contained" color="secondary" fullWidth onClick={handleClear}>
           Clear my data
