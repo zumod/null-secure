@@ -1,0 +1,1 @@
+export const BASE_URL = "https://sumod-cool-server.onrender.com/"

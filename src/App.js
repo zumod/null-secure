@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Container, CssBaseline, Box, TextField, Button, Typography, IconButton } from '@mui/material';
 import { FileCopyOutlined as FileCopyOutlinedIcon } from '@mui/icons-material';
+import { BASE_URL } from './Endpoints';
 
 const theme = createTheme({
   palette: {
@@ -56,7 +57,7 @@ const App = () => {
 
   const handleCheckData = async () => {
     try {
-      const response = await fetch('http://localhost:4000/read-data', {
+      const response = await fetch(`${BASE_URL}read-data`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -81,7 +82,7 @@ const App = () => {
 
     if (name) {
       try {
-        const response = await fetch('http://localhost:4000/add-data', {
+        const response = await fetch(`${BASE_URL}add-data`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -106,7 +107,7 @@ const App = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:4000/clear-data', {
+      const response = await fetch(`${BASE_URL}clear-data`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
