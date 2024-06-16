@@ -8,7 +8,7 @@ const theme = createTheme({
   palette: {
     mode: 'dark',
     background: {
-      default: '#000000', // Black background
+      default: '#000000',
     },
     primary: {
       main: '#BF40BF',
@@ -24,17 +24,17 @@ const theme = createTheme({
     MuiTextField: {
       styleOverrides: {
         root: {
-          backgroundColor: '#333333', // Dark input background
+          backgroundColor: '#333333',
           borderRadius: 4,
           '& .MuiOutlinedInput-root': {
             '& fieldset': {
-              borderColor: '#BF40BF', // Primary color border
+              borderColor: '#BF40BF',
             },
             '&:hover fieldset': {
-              borderColor: '#bf6dbf', // Secondary color on hover
+              borderColor: '#bf6dbf',
             },
             '&.Mui-focused fieldset': {
-              borderColor: '#bf6dbf', // Primary color when focused
+              borderColor: '#bf6dbf',
             },
           },
         },
@@ -177,7 +177,7 @@ const App = () => {
             alignItems: 'center',
             marginTop: 8,
             padding: 4,
-            backgroundColor: '#1c1c1c', // Slightly lighter black for form container
+            backgroundColor: '#1c1c1c',
             borderRadius: 2,
           }}
         >
@@ -198,12 +198,12 @@ const App = () => {
                   disabled={justSubmitted}
                   InputProps={{
                     style: {
-                      color: 'white', // White text
+                      color: 'white',
                     },
                   }}
                   InputLabelProps={{
                     style: {
-                      color: 'white', // White label text
+                      color: 'white',
                     },
                   }}
                 />
